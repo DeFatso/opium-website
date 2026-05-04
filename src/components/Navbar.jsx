@@ -1,98 +1,84 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import "../styles/Navbar.css";
 
-const navItems = [
-  { label: "Home", id: "home" },
-  { label: "About Us", id: "about" },
-  { label: "Services", id: "services" },
-  { label: "Projects", id: "projects" },
-  { label: "Team", id: "team" },
-  { label: "Contact", id: "contact" }
-];
-
-const Navbar = () => {
+function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const navItems = ["Home", "About Us", "Services", "Contact"];
+
+  const formatLink = (item) => item.toLowerCase().replaceAll(" ", "-");
 
   useEffect(() => {
     const handleScroll = () => {
-      let current = "home";
-
-      navItems.forEach((item) => {
-        const section = document.getElementById(item.id);
-        if (section) {
-          const sectionTop = section.offsetTop - 100;
-          if (window.scrollY >= sectionTop) {
-            current = item.id;
-          }
-        }
-      });
-
-      setActiveSection(current);
+      setIsScrolled(window.scrollY > 80);
     };
 
     window.addEventListener("scroll", handleScroll);
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <nav className="navbar">
+    <header className={`navbar ${isScrolled ? "navbar-scrolled" : ""}`}>
       <div className="nav-container">
-
-        {/* Logo */}
-        <div className="nav-logo">
+        <a href="#home" className="nav-logo">
           <img src="/logo.png" alt="Hyses logo" />
-        </div>
+          <span>Hyses</span>
+        </a>
 
-        {/* Desktop Menu */}
-        <div className="nav-menu-desktop">
+        <nav className="nav-menu-desktop">
           <ul className="nav-links">
-            {navItems.map((item, index) => (
-              <li key={index}>
-                <a
-                  href={`#${item.id}`}
-                  className={activeSection === item.id ? "active" : ""}
-                >
-                  {item.label}
-                </a>
+            {navItems.map((item) => (
+              <li key={item}>
+                <a href={`#${formatLink(item)}`}>{item}</a>
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
 
-        {/* Mobile Button */}
-        <div
+        <a href="#contact" className="nav-quote">
+          Get a Quote
+        </a>
+
+        <button
           className="menu-icon"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
         >
-          <div className={`hamburger ${isMenuOpen ? "active" : ""}`}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-
-        {/* Mobile Menu */}
-        <div className={`nav-menu-mobile ${isMenuOpen ? "active" : ""}`}>
-          <ul className="nav-links-mobile">
-            {navItems.map((item, index) => (
-              <li key={index}>
-                <a
-                  href={`#${item.id}`}
-                  className={activeSection === item.id ? "active" : ""}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-    </nav>
+
+      <nav className={`nav-menu-mobile ${isMenuOpen ? "active" : ""}`}>
+        <ul className="nav-links-mobile">
+          {navItems.map((item) => (
+            <li key={item}>
+              <a
+                href={`#${formatLink(item)}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item}
+              </a>
+            </li>
+          ))}
+
+          <li>
+            <a
+              href="#contact"
+              className="mobile-quote"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Get a Quote
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
-};
+}
 
 export default Navbar;

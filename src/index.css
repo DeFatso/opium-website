@@ -16,7 +16,3 @@ body {
   flex-direction: column;
   box-sizing: border-box;
 }
-
-main {
-  padding-top: 80px;
-}

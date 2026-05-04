@@ -3,25 +3,24 @@ import "../styles/Hero.css";
 function Hero() {
   return (
     <section className="hero" id="home">
-      <div className="hero-shape">
-        <div className="hero-content">
-          <p className="hero-label">Hyses</p>
+      <div className="hero-container">
+        <div className="hero-text">
+          <p className="hero-eyebrow">Hydraulic & Engineering Solutions</p>
 
-          <h1>
-            Experience The
-            <br />
-            Difference in
-            <br />
-            Hydraulics
-          </h1>
+          <h1>Powering Industry With Reliable Hydraulic Solutions</h1>
 
-          <div className="hero-buttons">
-            <a href="#about" className="hero-btn hero-btn-filled">
-              Read More
+          <p className="hero-description">
+            Hyses provides professional hydraulic repairs, engineering support,
+            system maintenance, and industrial solutions built for performance.
+          </p>
+
+          <div className="hero-actions">
+            <a href="#services" className="hero-btn hero-btn-primary">
+              Explore Services
             </a>
 
-            <a href="#contact" className="hero-btn hero-btn-outline">
-              Get Quote
+            <a href="#contact" className="hero-btn hero-btn-secondary">
+              Get a Quote
             </a>
           </div>
         </div>

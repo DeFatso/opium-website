@@ -1,0 +1,149 @@
+.footer {
+  background: #071527;
+  color: #dbeafe;
+  padding: 70px 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.4fr 1fr;
+  gap: 40px;
+  animation: fadeUp 0.8s ease;
+}
+
+/* Headings */
+.footer-section h2 {
+  color: #ff5a1f;
+  font-size: 2rem;
+  margin-bottom: 14px;
+}
+
+.footer-section h3 {
+  color: #ffffff;
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+}
+
+/* Text */
+.footer-section p,
+.footer-section li {
+  color: #a8b2d1;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Links */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  color: #a8b2d1;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section a:hover {
+  color: #ff5a1f;
+  padding-left: 5px;
+}
+
+/* Social Icons */
+.footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.footer-socials a {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background: #ff5a1f;
+  transform: translateY(-4px);
+}
+
+/* Bottom */
+.footer-bottom {
+  margin-top: 45px;
+  padding: 22px 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom p {
+  color: #8892b0;
+  font-size: 0.9rem;
+}
+
+/* Sticky Mobile Bar */
+.sticky-footer-contact {
+  display: none;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer {
+    padding-bottom: 70px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .sticky-footer-contact {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    z-index: 9999;
+  }
+
+  .sticky-footer-contact a {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    background: #0a192f;
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .sticky-footer-contact .whatsapp {
+    background: #25d366;
+  }
+}
