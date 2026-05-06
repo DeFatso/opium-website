@@ -1,0 +1,138 @@
+.services-products {
+  padding: 7% 8%;
+  background: #f4f5f7;
+}
+
+.services-products-container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.services-products-header {
+  max-width: 720px;
+  margin-bottom: 4%;
+}
+
+.services-products-label {
+  color: #f85f1c;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.services-products-header h2 {
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1.08;
+  color: #19253a;
+  margin-bottom: 1.2rem;
+}
+
+.services-products-header h2 span {
+  color: #f85f1c;
+}
+
+.services-products-intro {
+  color: #667085;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.services-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.3rem;
+}
+
+.services-product-card {
+  position: relative;
+  min-height: 150px;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 1.6rem;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(25, 37, 58, 0.08);
+  transition: all 0.3s ease;
+}
+
+.services-product-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #f85f1c;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.services-product-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 22px 55px rgba(25, 37, 58, 0.14);
+}
+
+.services-product-card:hover::before {
+  transform: scaleX(1);
+}
+
+.services-product-number {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: rgba(248, 95, 28, 0.1);
+  color: #f85f1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.services-product-card h3 {
+  color: #19253a;
+  font-size: 1rem;
+  line-height: 1.45;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.services-product-line {
+  width: 40px;
+  height: 3px;
+  background: #f85f1c;
+  border-radius: 20px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .services-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-products {
+    padding: 90px 6%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .services-products {
+    padding: 75px 1.2rem;
+  }
+
+  .services-products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-products-header h2 {
+    font-size: 2.3rem;
+  }
+
+  .services-product-card {
+    min-height: auto;
+    padding: 1.5rem;
+  }
+}

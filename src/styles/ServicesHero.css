@@ -1,0 +1,175 @@
+.services-hero {
+  position: relative;
+  min-height: 75vh;
+  padding: 10% 8% 6%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  background-image: url("/services-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.services-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(25, 37, 58, 0.9) 0%,
+    rgba(25, 37, 58, 0.75) 45%,
+    rgba(25, 37, 58, 0.25) 100%
+  );
+  z-index: 1;
+}
+
+.services-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 52%;
+  color: #ffffff;
+}
+
+.services-hero-label {
+  color: #f85f1c;
+  font-size: 0.9vw;
+  font-weight: 700;
+  letter-spacing: 0.3vw;
+  text-transform: uppercase;
+  margin-bottom: 2%;
+}
+
+.services-hero h1 {
+  font-size: clamp(2.5rem, 4.8vw, 5rem);
+  line-height: 1.05;
+  font-weight: 800;
+  margin-bottom: 3%;
+}
+
+.services-hero-text {
+  width: 90%;
+  font-size: 1vw;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 5%;
+}
+
+.services-hero-buttons {
+  display: flex;
+  gap: 1.2vw;
+  flex-wrap: wrap;
+}
+
+.services-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 180px;
+  padding: 16px 30px;
+
+  border-radius: 999px;
+
+  font-size: clamp(0.9rem, 0.95vw, 1rem);
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.services-hero-btn.primary {
+  background: #f85f1c;
+  color: #ffffff;
+  box-shadow: 0 1vw 2vw rgba(248, 95, 28, 0.3);
+}
+
+.services-hero-btn.primary:hover {
+  transform: translateY(-3px);
+  background: #ff7436;
+}
+
+.services-hero-btn.secondary {
+  background: #ffffff;
+  color: #19253a;
+}
+
+.services-hero-btn.secondary:hover {
+  transform: translateY(-3px);
+  background: #f2f2f2;
+}
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .services-hero {
+    min-height: 65vh;
+    padding: 14% 6% 8%;
+  }
+
+  .services-hero-content {
+    width: 70%;
+  }
+
+  .services-hero-label {
+    font-size: 1.4vw;
+  }
+
+  .services-hero-text {
+    font-size: 1.7vw;
+  }
+
+  .services-hero-btn {
+    font-size: 1.5vw;
+    padding: 1.5% 3%;
+  }
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .services-hero {
+    min-height: 60vh;
+    padding: 140px 6% 70px;
+    background-position: center;
+  }
+
+  .services-hero-overlay {
+    background: rgba(25, 37, 58, 0.82);
+  }
+
+  .services-hero-content {
+    width: 100%;
+  }
+
+  .services-hero-label {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+  }
+
+  .services-hero h1 {
+    font-size: 2.7rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .services-hero-text {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .services-hero-buttons {
+    gap: 1rem;
+  }
+
+  .services-hero-btn {
+    width: fit-content;
+    padding: 14px 24px;
+    font-size: 0.95rem;
+  }
+}
