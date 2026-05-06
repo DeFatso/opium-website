@@ -1,13 +1,17 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const navItems = ["Home", "About Us", "Services", "Contact"];
-
-  const formatLink = (item) => item.toLowerCase().replaceAll(" ", "-");
+  const navItems = [
+    { label: "Home", path: "/" },
+    { label: "About Us", path: "/about" },
+    { label: "Services", path: "/#services" },
+    { label: "Contact", path: "/#contact" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,27 +27,27 @@ function Navbar() {
   return (
     <header className={`navbar ${isScrolled ? "navbar-scrolled" : ""}`}>
       <div className="nav-container">
-        <a href="#home" className="nav-logo">
+        <Link to="/" className="nav-logo">
           <img src="/logo.png" alt="Hyses logo" />
           <span>Hyses</span>
-        </a>
+        </Link>
 
         <nav className="nav-menu-desktop">
           <ul className="nav-links">
             {navItems.map((item) => (
-              <li key={item}>
-                <a href={`#${formatLink(item)}`}>{item}</a>
+              <li key={item.label}>
+                <Link to={item.path}>{item.label}</Link>
               </li>
             ))}
           </ul>
         </nav>
 
-        <a href="#contact" className="nav-quote">
+        <Link to="/#contact" className="nav-quote">
           Get a Quote
-        </a>
+        </Link>
 
         <button
-          className="menu-icon"
+          className={`menu-icon ${isMenuOpen ? "active" : ""}`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -56,24 +60,21 @@ function Navbar() {
       <nav className={`nav-menu-mobile ${isMenuOpen ? "active" : ""}`}>
         <ul className="nav-links-mobile">
           {navItems.map((item) => (
-            <li key={item}>
-              <a
-                href={`#${formatLink(item)}`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item}
-              </a>
+            <li key={item.label}>
+              <Link to={item.path} onClick={() => setIsMenuOpen(false)}>
+                {item.label}
+              </Link>
             </li>
           ))}
 
           <li>
-            <a
-              href="#contact"
+            <Link
+              to="/#contact"
               className="mobile-quote"
               onClick={() => setIsMenuOpen(false)}
             >
               Get a Quote
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

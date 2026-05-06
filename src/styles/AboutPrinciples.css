@@ -1,0 +1,115 @@
+.about-principles {
+  background: #d9d9d9;
+  padding: 70px 20px 85px;
+}
+
+.about-principles-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.about-principles h2 {
+  color: #000000;
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+  font-weight: 800;
+  margin-bottom: 42px;
+}
+
+.about-principles h2 span {
+  color: #ff5a1f;
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.principle-card {
+  min-height: 300px;
+  background: #d9d9d9;
+  border-radius: 0 0 12px 12px;
+  padding: 6px 28px 28px;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.18);
+}
+
+.principle-icon {
+  width: 58px;
+  height: 58px;
+  background: #ff5a1f;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-size: 1.9rem;
+  margin-bottom: 28px;
+}
+
+.principle-card h3 {
+  color: #12213a;
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.principle-card p {
+  color: #000000;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  max-width: 330px;
+}
+
+.principle-card ul {
+  color: #000000;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  padding-left: 22px;
+  margin: 0;
+}
+
+.principle-card li {
+  margin-bottom: 3px;
+}
+
+@media (max-width: 1000px) {
+  .principles-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .principle-card {
+    min-height: auto;
+  }
+
+  .principle-card p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-principles {
+    padding: 55px 16px 70px;
+  }
+
+  .about-principles h2 {
+    font-size: 2rem;
+    margin-bottom: 34px;
+  }
+
+  .principle-card {
+    padding: 6px 22px 26px;
+  }
+
+  .principle-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 1.65rem;
+    margin-bottom: 24px;
+  }
+
+  .principle-card h3 {
+    font-size: 1.15rem;
+  }
+}

@@ -5,21 +5,6 @@
   overflow-x: hidden;
 }
 
-.about-header {
-  background: #ff5a1f;
-  height: 230px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-header h1 {
-  color: #fff;
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-}
-
 .about-main {
   max-width: 1180px;
   margin: 85px auto 95px;
@@ -39,16 +24,12 @@
 .dots {
   position: absolute;
   top: -60px;
-  right: 30px; /* WAS -120px → this is the key fix */
-
+  right: 30px;
   width: 420px;
   height: 380px;
-
   background-image: radial-gradient(#ff5a1f 1.8px, transparent 1.8px);
   background-size: 20px 20px;
-
   z-index: 1;
-
   -webkit-mask-image: linear-gradient(to left, black 70%, transparent 100%);
   mask-image: linear-gradient(to left, black 70%, transparent 100%);
 }
@@ -147,121 +128,7 @@
   line-height: 1;
 }
 
-/* TESTIMONIAL SECTION */
-.testimonial-section {
-  background: #ff5a1f;
-  padding: 42px 58px 0;
-  min-height: 445px;
-}
-
-.testimonial-title h4 {
-  font-size: 1.45rem;
-  font-weight: 800;
-  margin-bottom: 24px;
-}
-
-.testimonial-title h2 {
-  font-size: 2.7rem;
-  font-weight: 900;
-  line-height: 1.15;
-}
-
-.testimonial-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 110px;
-  margin-top: 68px;
-}
-
-.testimonial-card {
-  position: relative;
-}
-
-.client {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  color: #fff;
-  margin-left: -25px;
-  margin-bottom: 22px;
-}
-
-.client img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.client h3 {
-  font-size: 1.55rem;
-  font-weight: 800;
-}
-
-.testimonial-card p {
-  position: relative;
-  background: #fff;
-  min-height: 105px;
-  padding: 24px 26px;
-  text-align: center;
-  font-size: 0.76rem;
-  line-height: 1.15;
-  font-style: italic;
-}
-
-.testimonial-card p::before {
-  content: "";
-  position: absolute;
-  top: -26px;
-  left: 0;
-  border-right: 26px solid transparent;
-  border-bottom: 26px solid #fff;
-}
-
-.about-text {
-  max-width: 1090px;
-  margin: 125px auto 58px;
-  padding: 0 40px;
-  font-size: 0.98rem;
-  line-height: 1.2;
-}
-
-.info-boxes {
-  max-width: 1200px;
-  margin: 0 auto 80px;
-  padding: 0 40px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 75px;
-}
-
-.info-box {
-  border: 1px solid #ff8a5f;
-  padding: 25px 28px;
-  min-height: 360px;
-}
-
-.info-box h3 {
-  font-size: 1.35rem;
-  font-weight: 800;
-  margin-bottom: 30px;
-  color: #ff5a1f;
-}
-
-.info-box p {
-  font-size: 1.18rem;
-  line-height: 1.18;
-}
-
 @media (max-width: 900px) {
-  .about-header {
-    height: 170px;
-  }
-
-  .about-header h1 {
-    font-size: 2.2rem;
-  }
-
   .about-main {
     grid-template-columns: 1fr;
     gap: 45px;
@@ -304,23 +171,5 @@
 
   .about-content h2 {
     font-size: 2.1rem;
-  }
-
-  .testimonial-section {
-    padding: 45px 30px;
-  }
-
-  .testimonial-cards,
-  .info-boxes {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .client {
-    margin-left: 0;
-  }
-
-  .about-text {
-    margin-top: 70px;
   }
 }

@@ -1,28 +1,25 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Services from "./components/Services";
-import Gallery from "./components/Gallery";
-import ContactExtras from "./components/ContactExtras";
-import Footer from "./components/Footer";
-import { Frown } from "lucide-react";
-import Contact from "./components/Contact";
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <Home />
+            </>
+          }
+        />
 
-      <main>
-        <Hero />
-        <About />
-        <Services />
-        <Gallery />
-        <ContactExtras />
-        <Contact />
-        <Footer />
-      </main>
-    </>
+        <Route path="/about" element={<AboutUs />} />
+      </Routes>
+    </Router>
   );
 }
 
