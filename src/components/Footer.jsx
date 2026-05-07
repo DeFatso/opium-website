@@ -2,31 +2,50 @@ import "../styles/Footer.css";
 import {
   FaWhatsapp,
   FaFacebookF,
-  FaXTwitter,
-  FaThreads,
-} from "react-icons/fa6";
+  FaTwitter,
+  FaLinkedinIn,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaClock,
+} from "react-icons/fa";
+import { HiArrowRight } from "react-icons/hi";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <footer className="footer" id="contact">
-        <div className="footer-container">
+        <div className="footer-wave">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              fill="#f85f1c"
+              opacity="0.1"
+            ></path>
+          </svg>
+        </div>
 
+        <div className="footer-container">
           {/* Brand */}
           <div className="footer-section footer-brand">
-            <h2>HYSES</h2>
-            <p>
+            <div className="footer-logo">
+              <h2>HYSES</h2>
+            </div>
+
+            <p className="brand-description">
               Leading provider of comprehensive hydraulic and engineering
-              solutions.
+              solutions across Africa. Excellence in every connection.
             </p>
 
-            {/* Social Icons */}
             <div className="footer-socials">
               <a
                 href="https://wa.me/27662013689"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="WhatsApp"
+                className="social-icon whatsapp"
               >
                 <FaWhatsapp />
               </a>
@@ -36,87 +55,165 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Facebook"
+                className="social-icon facebook"
               >
                 <FaFacebookF />
               </a>
 
-              {/* Placeholder links */}
-              <a href="#" aria-label="X">
-                <FaXTwitter />
+              <a href="#" aria-label="Twitter" className="social-icon twitter">
+                <FaTwitter />
               </a>
 
-              <a href="#" aria-label="Threads">
-                <FaThreads />
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                className="social-icon linkedin"
+              >
+                <FaLinkedinIn />
               </a>
             </div>
           </div>
 
           {/* Links */}
           <div className="footer-section">
-            <h3>Quick Links</h3>
+            <h3>Explore</h3>
+
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about-us">About Us</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#team">Team</a></li>
+              <li>
+                <a href="/">Home</a>
+                <HiArrowRight className="link-icon" />
+              </li>
+
+              <li>
+                <a href="/about">About Us</a>
+                <HiArrowRight className="link-icon" />
+              </li>
+
+              <li>
+                <a href="/services">Services</a>
+                <HiArrowRight className="link-icon" />
+              </li>
+
+              <li>
+                <a href="/projects">Projects</a>
+                <HiArrowRight className="link-icon" />
+              </li>
+
+              <li>
+                <a href="/contact">Contact</a>
+                <HiArrowRight className="link-icon" />
+              </li>
             </ul>
           </div>
 
           {/* Contact */}
           <div className="footer-section">
-            <h3>Contact</h3>
+            <h3>Get in Touch</h3>
 
-            <p>
-              Office: <a href="tel:+27100234807">+27 10 023 4807</a>
-            </p>
-            <p>
-              Leeroy: <a href="tel:+27662013689">+27 66 201 3689</a>
-            </p>
-            <p>
-              Willing: <a href="tel:+27814707892">+27 81 470 7892</a>
-            </p>
-            <p>
-              Email: <a href="mailto:info@hyses.co.za">info@hyses.co.za</a>
-            </p>
-            <p>
-              Address:{" "}
-              <a
-                href="https://www.google.com/maps?q=67+Van+Rensburg+Avenue+Klipfontein+Witbank"
-                target="_blank"
-                rel="noreferrer"
-              >
-                67 Van Rensburg Avenue, Klipfontein, Witbank
-              </a>
-            </p>
+            <div className="contact-info-item">
+              <FaPhoneAlt className="contact-icon" />
+
+              <div>
+                <p className="contact-label">Office</p>
+                <a href="tel:+27100234807">+27 10 023 4807</a>
+              </div>
+            </div>
+
+            <div className="contact-info-item">
+              <FaWhatsapp className="contact-icon" />
+
+              <div>
+                <p className="contact-label">WhatsApp</p>
+                <a href="tel:+27662013689">+27 66 201 3689</a>
+              </div>
+            </div>
+
+            <div className="contact-info-item">
+              <FaEnvelope className="contact-icon" />
+
+              <div>
+                <p className="contact-label">Email</p>
+                <a href="mailto:info@hyses.co.za">info@hyses.co.za</a>
+              </div>
+            </div>
+
+            <div className="contact-info-item">
+              <FaMapMarkerAlt className="contact-icon" />
+
+              <div>
+                <p className="contact-label">Visit Us</p>
+
+                <a
+                  href="https://www.google.com/maps?q=67+Van+Rensburg+Avenue+Klipfontein+Witbank"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  67 Van Rensburg Ave, Klipfontein, Witbank
+                </a>
+              </div>
+            </div>
           </div>
 
-          {/* Business Info */}
+          {/* Hours */}
           <div className="footer-section">
-            <h3>Business Info</h3>
-            <p>Registration No: 2020/264133/07</p>
-            <p>VAT No: 4430293664</p>
-          </div>
+            <h3>Business Hours</h3>
 
+            <div className="business-hours">
+              <div className="hours-item">
+                <FaClock className="hours-icon" />
+
+                <div>
+                  <p className="day">Monday - Friday</p>
+                  <p className="time">8:00 AM - 5:00 PM</p>
+                </div>
+              </div>
+
+              <div className="hours-item">
+                <FaClock className="hours-icon" />
+
+                <div>
+                  <p className="day">Saturday</p>
+                  <p className="time">9:00 AM - 1:00 PM</p>
+                </div>
+              </div>
+
+              <div className="hours-item emergency">
+                <p className="emergency-text">
+                  24/7 Emergency Support Available
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Bottom */}
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} HYSES. All rights reserved.</p>
+          <div className="footer-bottom-container">
+            <p>© {currentYear} HYSES. All rights reserved.</p>
+          </div>
         </div>
       </footer>
 
       {/* Sticky Mobile Bar */}
       <div className="sticky-footer-contact">
-        <a href="tel:+27100234807">Call</a>
-        <a href="mailto:info@hyses.co.za">Email</a>
+        <a href="tel:+27100234807" className="sticky-call">
+          <FaPhoneAlt />
+          <span>Call</span>
+        </a>
+
+        <a href="mailto:info@hyses.co.za" className="sticky-email">
+          <FaEnvelope />
+          <span>Email</span>
+        </a>
+
         <a
           href="https://wa.me/27662013689"
           target="_blank"
           rel="noreferrer"
-          className="whatsapp"
+          className="sticky-whatsapp"
         >
-          WhatsApp
+          <FaWhatsapp />
+          <span>WhatsApp</span>
         </a>
       </div>
     </>
