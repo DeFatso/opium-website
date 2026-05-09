@@ -1,58 +1,37 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/About.css";
 
 function About() {
-  useEffect(() => {
-    const counter = document.getElementById("experience-count");
-    let start = 0;
-    const end = 8;
-
-    const duration = 1500;
-    const incrementTime = duration / end;
-
-    const timer = setInterval(() => {
-      start++;
-
-      if (counter) {
-        counter.textContent = start;
-      }
-
-      if (start === end) {
-        clearInterval(timer);
-
-        if (counter) {
-          counter.textContent = start + "+";
-        }
-      }
-    }, incrementTime);
-
-    return () => clearInterval(timer);
-  }, []);
+  const images = [
+    "/gallery/image-01.png",
+    "/gallery/image-02.png",
+    "/gallery/image-03.png",
+    "/gallery/image-04.png",
+  ];
 
   return (
     <section className="about" id="about">
       <div className="about-main">
-        <div className="about-images">
-          <div className="dots"></div>
+        <div className="about-collage">
+          <div className="about-collage-corner about-collage-corner-orange"></div>
+          <div className="about-collage-corner about-collage-corner-navy"></div>
 
-          <img
-            src="/about-main.jpg"
-            alt="Hydraulic equipment"
-            className="about-img-main"
-          />
+          <div className="about-collage-grid">
+            <div className="about-collage-img about-collage-img-large">
+              <img src={images[0]} alt="HYSES industrial hydraulic project" />
+            </div>
 
-          <img
-            src="/about-small.png"
-            alt="Hydraulic pump"
-            className="about-img-small"
-          />
+            <div className="about-collage-img about-collage-img-tall">
+              <img src={images[1]} alt="HYSES on-site hydraulic work" />
+            </div>
 
-          <div className="experience-box">
-            <span id="experience-count">0</span>
-            <p>
-              Years of <br /> Experience
-            </p>
+            <div className="about-collage-img about-collage-img-bottom">
+              <img src={images[2]} alt="HYSES workshop hydraulic equipment" />
+            </div>
+
+            <div className="about-collage-img about-collage-img-small">
+              <img src={images[3]} alt="HYSES field service vehicle" />
+            </div>
           </div>
         </div>
 

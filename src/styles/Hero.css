@@ -1,30 +1,56 @@
+/* src/styles/Hero.css */
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100vh; /* Changed from min-height to ensure full viewport height */
+  height: 100vh; /* Added explicit height for full screen */
   margin: 0;
   padding: 0;
-  background-image:
-    linear-gradient(
-      90deg,
-      rgba(25, 37, 58, 0.9) 0%,
-      rgba(25, 37, 58, 0.72) 42%,
-      rgba(25, 37, 58, 0.25) 100%
-    ),
-    url("../assets/hero-modern.png");
-  background-size: 108%;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
-  overflow: hidden;
+}
+
+/* Background image with responsive sizing */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../assets/hero-modern.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
   animation: heroZoom 14s ease-in-out infinite alternate;
+}
+
+/* Overlay gradient */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(25, 37, 58, 0.95) 0%,
+    rgba(25, 37, 58, 0.85) 42%,
+    rgba(25, 37, 58, 0.45) 100%
+  );
+  z-index: 1;
 }
 
 .hero-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 9rem 2rem 4rem;
+  padding: 0 2rem; /* Removed top/bottom padding to better center content */
+  position: relative;
+  z-index: 2;
 }
 
 .hero-text {
@@ -76,7 +102,13 @@
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .hero-btn-primary {
@@ -88,30 +120,26 @@
 .hero-btn-secondary {
   background: rgba(255, 255, 255, 0.95);
   color: #19253a;
+  backdrop-filter: blur(5px);
 }
 
-.hero-btn:hover {
+.hero-btn-primary:hover {
   transform: translateY(-3px);
+  background: #ff7436;
+  box-shadow: 0 22px 40px rgba(248, 95, 28, 0.45);
 }
 
-@media (max-width: 900px) {
-  .hero {
-    background-position: center;
-  }
-
-  .hero-container {
-    padding: 8rem 1.3rem 3rem;
-  }
-
-  .hero-text h1 {
-    font-size: clamp(2.1rem, 10vw, 3.2rem);
-  }
-
-  .hero-description {
-    font-size: 0.95rem;
-  }
+.hero-btn-secondary:hover {
+  transform: translateY(-3px);
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
+.hero-btn:active {
+  transform: translateY(0px);
+}
+
+/* Animations */
 .hero-eyebrow,
 .hero-text h1,
 .hero-description,
@@ -146,10 +174,359 @@
 
 @keyframes heroZoom {
   from {
-    background-size: 108%;
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+/* ============================================
+   FULLY RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    height: 100vh; /* Maintain full height on tablet */
+    min-height: 100vh;
   }
 
-  to {
-    background-size: 114%;
+  .hero-container {
+    padding: 0 2rem;
+  }
+
+  .hero-text {
+    max-width: 550px;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+  }
+
+  .hero-description {
+    font-size: 0.98rem;
+  }
+}
+
+/* Mobile Landscape & Small Tablet (768px) */
+@media (max-width: 768px) {
+  .hero {
+    height: 100vh; /* Full height on mobile */
+    min-height: 100vh;
+  }
+
+  /* Fix background image for mobile */
+  .hero::before {
+    background-size: cover;
+    background-position: 65% center;
+    animation: heroZoomMobile 10s ease-in-out infinite alternate;
+  }
+
+  /* Adjust overlay for better text readability on mobile */
+  .hero::after {
+    background: linear-gradient(
+      135deg,
+      rgba(25, 37, 58, 0.96) 0%,
+      rgba(25, 37, 58, 0.88) 50%,
+      rgba(25, 37, 58, 0.75) 100%
+    );
+  }
+
+  .hero-container {
+    padding: 0 1.5rem;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1.8rem, 6vw, 2.8rem);
+    line-height: 1.2;
+  }
+
+  .hero-description {
+    max-width: 100%;
+    font-size: 0.95rem;
+    margin: 0 0 1.8rem;
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero-btn {
+    min-width: 140px;
+    padding: 0.8rem 1.4rem;
+    font-size: 0.88rem;
+  }
+}
+
+/* Mobile Small (480px) */
+@media (max-width: 480px) {
+  .hero {
+    height: 100vh; /* Full height on small mobile */
+    min-height: 100vh;
+  }
+
+  /* Optimize background for small screens */
+  .hero::before {
+    background-size: auto 120%;
+    background-position: 70% center;
+    animation: none;
+  }
+
+  .hero::after {
+    background: linear-gradient(
+      135deg,
+      rgba(25, 37, 58, 0.98) 0%,
+      rgba(25, 37, 58, 0.92) 100%
+    );
+  }
+
+  .hero-container {
+    padding: 0 1.2rem;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1.5rem, 5vw, 2.2rem);
+    margin-bottom: 1rem;
+  }
+
+  .hero-description {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: stretch;
+  }
+
+  .hero-btn {
+    width: 100%;
+    min-width: auto;
+    padding: 0.75rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  /* Remove zoom animation on very small devices for performance */
+  .hero::before {
+    animation: none;
+  }
+}
+
+/* Mobile Large (between 481px and 640px) */
+@media (min-width: 481px) and (max-width: 640px) {
+  .hero {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  .hero-container {
+    padding: 0 1.5rem;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1.8rem, 5.5vw, 2.4rem);
+  }
+
+  .hero-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero-btn {
+    min-width: 150px;
+  }
+}
+
+/* iPhone SE and similar small devices */
+@media (max-width: 375px) {
+  .hero {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  .hero-container {
+    padding: 0 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-description {
+    font-size: 0.85rem;
+  }
+
+  .hero-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.82rem;
+  }
+}
+
+/* Tablet Landscape (1024px - 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
+  .hero {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  .hero-container {
+    padding: 0 2rem;
+  }
+
+  .hero-text {
+    max-width: 550px;
+  }
+}
+
+/* Mobile Landscape Orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  .hero-container {
+    padding: 0 1.5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-description {
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-actions {
+    flex-direction: row;
+  }
+
+  .hero-btn {
+    min-width: 130px;
+    padding: 0.7rem 1.2rem;
+  }
+}
+
+/* Large Desktop Screens (1440px and above) */
+@media (min-width: 1440px) {
+  .hero {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  .hero-container {
+    max-width: 1400px;
+    padding: 0 2rem;
+  }
+
+  .hero-text {
+    max-width: 700px;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(3rem, 4vw, 5rem);
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+    max-width: 600px;
+  }
+
+  .hero-btn {
+    min-width: 180px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+/* 4K Screens (2560px and above) */
+@media (min-width: 2560px) {
+  .hero {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  .hero-container {
+    max-width: 1800px;
+    padding: 0 3rem;
+  }
+
+  .hero-text {
+    max-width: 900px;
+  }
+
+  .hero-text h1 {
+    font-size: 5.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.3rem;
+    max-width: 750px;
+  }
+
+  .hero-btn {
+    min-width: 220px;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+  .hero::before {
+    animation: none;
+    transform: scale(1);
+  }
+
+  .hero-eyebrow,
+  .hero-text h1,
+  .hero-description,
+  .hero-actions {
+    animation: none;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .hero-btn:hover {
+    transform: none;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .hero::after {
+    background: rgba(25, 37, 58, 0.95);
+  }
+
+  .hero-btn-primary {
+    background: #f85f1c;
+    border: 2px solid #ffffff;
+  }
+
+  .hero-btn-secondary {
+    background: #ffffff;
+    border: 2px solid #19253a;
   }
 }

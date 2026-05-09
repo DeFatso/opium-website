@@ -1,3 +1,4 @@
+/* src/styles/ProjectsStats.css */
 .projects-stats-section {
   width: 100%;
   padding: 6rem 7vw;
@@ -288,5 +289,44 @@
 
   .projects-stats-content h2 {
     font-size: 1.9rem;
+  }
+}
+
+/* ============================================
+   COUNT-UP ANIMATION ADDITIONS
+   ============================================ */
+
+/* Smooth transition for number updates */
+.projects-stat-item h3 {
+  transition: all 0.2s ease-out;
+  display: inline-block;
+}
+
+/* Optional pulse effect when numbers are counting */
+@keyframes countPulse {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.projects-stat-item h3 {
+  animation: countPulse 0.3s ease-out;
+}
+
+/* Ensure numbers have proper spacing */
+.count-number {
+  display: inline-block;
+}
+
+/* Reduced motion preference - disable count animation */
+@media (prefers-reduced-motion: reduce) {
+  .projects-stat-item h3 {
+    animation: none;
+    transition: none;
   }
 }

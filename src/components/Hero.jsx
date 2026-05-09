@@ -1,6 +1,11 @@
+// src/components/Hero.jsx
 import "../styles/Hero.css";
 
 function Hero() {
+  const handleNavigation = (path) => {
+    window.location.href = path;
+  };
+
   return (
     <section className="hero" id="home">
       <div className="hero-container">
@@ -15,11 +20,11 @@ function Hero() {
           </p>
 
           <div className="hero-actions">
-            <a href="#services" className="hero-btn hero-btn-primary">
+            <a href="/services" className="hero-btn hero-btn-primary">
               Explore Services
             </a>
 
-            <a href="#contact" className="hero-btn hero-btn-secondary">
+            <a href="/contact" className="hero-btn hero-btn-secondary">
               Get a Quote
             </a>
           </div>
