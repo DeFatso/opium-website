@@ -1,0 +1,169 @@
+.home-services {
+  padding: 7% 8%;
+  background: #d9d9d9;
+}
+
+.home-services-container {
+  max-width: 1300px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* ========================= */
+/* LEFT */
+/* ========================= */
+
+.home-services-content {
+  max-width: 520px;
+}
+
+.home-services-label {
+  display: inline-block;
+
+  color: #f85f1c;
+
+  font-size: 0.9rem;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  margin-bottom: 1rem;
+}
+
+.home-services-content h2 {
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  line-height: 1.05;
+
+  color: #19253a;
+
+  margin-bottom: 1.5rem;
+}
+
+.home-services-content p {
+  color: #667085;
+
+  font-size: 1rem;
+  line-height: 1.9;
+
+  margin-bottom: 2.3rem;
+}
+
+.home-services-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+
+  padding: 1rem 1.7rem;
+
+  background: #f85f1c;
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 14px;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.home-services-button:hover {
+  transform: translateY(-4px);
+  background: #ff7436;
+}
+
+/* ========================= */
+/* RIGHT */
+/* ========================= */
+
+.home-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.4rem;
+}
+
+.home-service-card {
+  background: #f7f7f7;
+
+  border-radius: 24px;
+
+  padding: 2rem;
+
+  border: 1px solid rgba(248, 95, 28, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.home-service-card:hover {
+  transform: translateY(-6px);
+
+  background: #ffffff;
+
+  box-shadow: 0 18px 40px rgba(25, 37, 58, 0.1);
+}
+
+.home-service-icon {
+  width: 72px;
+  height: 72px;
+
+  border-radius: 20px;
+
+  background: rgba(248, 95, 28, 0.1);
+
+  color: #f85f1c;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 1.5rem;
+}
+
+.home-service-card h3 {
+  color: #19253a;
+
+  font-size: 1.15rem;
+  line-height: 1.4;
+
+  font-weight: 700;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+  .home-services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .home-services-content {
+    max-width: 100%;
+  }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .home-services {
+    padding: 90px 1.2rem;
+  }
+
+  .home-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-services-content h2 {
+    font-size: 2.5rem;
+  }
+}

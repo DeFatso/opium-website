@@ -1,14 +1,25 @@
 import About from "../components/About";
 import Hero from "../components/Hero";
-// import other sections like Hero, Services, etc.
+import ProjectsStats from "../components/ProjectsStats"
+import HomeServices from "../components/HomeServices";
+import WhyChooseUs from "../components/WhyChooseUs";
+import FeaturedProjects from "../components/FeaturedProjects";
+import IndustriesServed from "../components/IndustriesServed";
+import CTABanner from "../components/CTABanner";
+import Footer from "../components/Footer"
 
 function Home() {
   return (
     <>
       <Hero />
-      {/* Services */}
+      <ProjectsStats />
       <About />
-      {/* Other sections */}
+      <HomeServices />
+      <WhyChooseUs />
+      <FeaturedProjects />
+      <IndustriesServed />
+      <CTABanner />
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,135 @@
+.featured-projects {
+  width: 100%;
+  padding: 6rem 7%;
+  background: #d9d9d9;
+  overflow: hidden;
+}
+
+.featured-projects-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.featured-projects-label {
+  color: #f85f1c;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.featured-projects-content h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.1;
+  color: #0f1b2d;
+  margin-bottom: 1.2rem;
+}
+
+.featured-projects-content p {
+  color: #5f6877;
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 520px;
+  margin-bottom: 2rem;
+}
+
+.featured-projects-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 1.6rem;
+  background: #f85f1c;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 999px;
+  box-shadow: 0 14px 30px rgba(248, 95, 28, 0.28);
+  transition: 0.3s ease;
+}
+
+.featured-projects-btn:hover {
+  transform: translateY(-3px);
+  background: #e65314;
+}
+
+.featured-projects-grid {
+  position: relative;
+  min-height: 420px;
+}
+
+.featured-project-card {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 28px;
+  box-shadow: 0 24px 55px rgba(15, 27, 45, 0.18);
+  border: 6px solid #ffffff;
+}
+
+.featured-project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-1 {
+  width: 58%;
+  height: 300px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.card-2 {
+  width: 50%;
+  height: 250px;
+  top: 70px;
+  right: 0;
+  z-index: 3;
+}
+
+.card-3 {
+  width: 48%;
+  height: 220px;
+  bottom: 0;
+  left: 25%;
+  z-index: 4;
+}
+
+@media (max-width: 900px) {
+  .featured-projects-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .featured-projects-grid {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-projects {
+    padding: 4rem 5%;
+  }
+
+  .featured-projects-grid {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .featured-project-card {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
