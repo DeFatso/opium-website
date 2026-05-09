@@ -1,6 +1,6 @@
 import About from "../components/About";
 import Hero from "../components/Hero";
-import ProjectsStats from "../components/ProjectsStats"
+// import ProjectsStats from "../components/ProjectsStats"
 import HomeServices from "../components/HomeServices";
 import WhyChooseUs from "../components/WhyChooseUs";
 import FeaturedProjects from "../components/FeaturedProjects";
@@ -12,7 +12,7 @@ function Home() {
   return (
     <>
       <Hero />
-      <ProjectsStats />
+      {/* <ProjectsStats /> */}
       <About />
       <HomeServices />
       <WhyChooseUs />
