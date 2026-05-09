@@ -1,6 +1,6 @@
 .services-products {
   padding: 7% 8%;
-  background: #f4f5f7;
+  background: #d9d9d9;
 }
 
 .services-products-container {
@@ -48,7 +48,7 @@
 .services-product-card {
   position: relative;
   min-height: 150px;
-  background: #ffffff;
+  background: #d9d9d9;
   border-radius: 22px;
   padding: 1.6rem;
   overflow: hidden;

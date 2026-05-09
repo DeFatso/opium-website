@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import ProjectsHero from "../components/ProjectsHero";
-import ProjectsStats from "../components/ProjectsStats";
+// import ProjectsStats from "../components/ProjectsStats";
 import ProjectsGrid from "../components/ProjectsGrid";
 import ProjectsDetails from "../components/ProjectsDetails";
 import Footer from "../components/Footer";
@@ -11,7 +11,7 @@ const Projects = () => {
         <>
             <Navbar />
             <ProjectsHero />
-            <ProjectsStats />
+            {/* <ProjectsStats /> */}
             <ProjectsGrid />
             <ProjectsDetails />
             <Footer />
