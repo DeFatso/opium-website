@@ -7,7 +7,9 @@ const Contact = () => {
       <div className="contact-container">
         <div className="contact-left">
           <p className="contact-label">Get In Touch</p>
+
           <h2>Let’s Talk Hydraulics</h2>
+
           <p className="contact-intro">
             Need hydraulic repairs, engineering support, field service, or
             workshop assistance? Contact Hyses and our team will assist you.
@@ -39,7 +41,7 @@ const Contact = () => {
             </div>
 
             <div className="contact-info-card">
-              <span>⏱</span>
+              <span>👥</span>
               <div>
                 <h4>Direct Contacts</h4>
                 <p>Leeroy: +27 66 201 3689</p>
@@ -72,8 +74,10 @@ const Contact = () => {
 
             <div className="form-group">
               <label>Service Needed</label>
-              <select>
-                <option>Select a service</option>
+              <select defaultValue="">
+                <option value="" disabled>
+                  Select a service
+                </option>
                 <option>Hydraulic Repairs</option>
                 <option>Engineering Solutions</option>
                 <option>Field Service</option>

@@ -1,12 +1,8 @@
 .contact {
   width: 100%;
   padding: 6rem 7vw;
-  background:
-    linear-gradient(rgba(5, 18, 34, 0.94), rgba(5, 18, 34, 0.94)),
-    url("../assets/hero.png");
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
+  background: #ffffff;
+  color: #071625;
 }
 
 .contact-container {
@@ -19,22 +15,24 @@
 }
 
 .contact-label {
-  color: #ff5a1f;
-  font-weight: 800;
+  color: #f85f1c;
+  font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   margin-bottom: 1rem;
+  font-size: 0.8rem;
 }
 
 .contact-left h2 {
   font-size: clamp(2.4rem, 5vw, 4rem);
   line-height: 1.05;
   margin-bottom: 1.5rem;
+  color: #071625;
 }
 
 .contact-intro {
   max-width: 620px;
-  color: #c7d4e4;
+  color: #5f6b7a;
   font-size: 1.05rem;
   line-height: 1.8;
   margin-bottom: 2.5rem;
@@ -47,20 +45,19 @@
 }
 
 .contact-info-card {
-  background: rgba(255, 255, 255, 0.075);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #f5f7fb;
+  border: 1px solid #e3e8ef;
   border-radius: 22px;
   padding: 1.4rem;
   display: flex;
   gap: 1rem;
-  backdrop-filter: blur(12px);
   transition: 0.3s ease;
 }
 
 .contact-info-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(255, 90, 31, 0.5);
-  background: rgba(255, 255, 255, 0.11);
+  border-color: rgba(248, 95, 28, 0.35);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
 }
 
 .contact-info-card span {
@@ -68,7 +65,7 @@
   height: 44px;
   min-width: 44px;
   border-radius: 14px;
-  background: #ff5a1f;
+  background: #f85f1c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,27 +75,29 @@
 
 .contact-info-card h4 {
   margin-bottom: 0.4rem;
-  color: #ffffff;
+  color: #071625;
   font-size: 1rem;
 }
 
 .contact-info-card p {
-  color: #c7d4e4;
+  color: #5f6b7a;
   font-size: 0.95rem;
   line-height: 1.5;
 }
 
 .contact-form-card {
   background: #ffffff;
-  color: #071b33;
+  color: #071625;
   padding: 2.2rem;
   border-radius: 28px;
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+  border: 1px solid #e3e8ef;
+  box-shadow: 0 24px 65px rgba(7, 22, 37, 0.1);
 }
 
 .contact-form-card h3 {
   font-size: 1.8rem;
   margin-bottom: 1.8rem;
+  color: #071625;
 }
 
 .form-row {
@@ -115,7 +114,7 @@
 
 .form-group label {
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 0.5rem;
   color: #102b4a;
 }
@@ -130,16 +129,21 @@
   padding: 0.95rem 1rem;
   font-size: 0.95rem;
   outline: none;
-  color: #071b33;
+  color: #071625;
   transition: 0.25s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #8a96a6;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: #ff5a1f;
+  border-color: #f85f1c;
   background: #ffffff;
-  box-shadow: 0 0 0 4px rgba(255, 90, 31, 0.12);
+  box-shadow: 0 0 0 4px rgba(248, 95, 28, 0.12);
 }
 
 .form-group textarea {
@@ -150,20 +154,20 @@
 .contact-button {
   width: 100%;
   border: none;
-  background: #ff5a1f;
+  background: #f85f1c;
   color: #ffffff;
   padding: 1rem 1.3rem;
   border-radius: 999px;
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 900;
   cursor: pointer;
   transition: 0.3s ease;
 }
 
 .contact-button:hover {
-  background: #e84d17;
+  background: #df4f12;
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(255, 90, 31, 0.35);
+  box-shadow: 0 14px 30px rgba(248, 95, 28, 0.28);
 }
 
 @media (max-width: 980px) {
