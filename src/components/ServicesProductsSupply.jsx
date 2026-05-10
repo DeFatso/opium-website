@@ -1,24 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/ServicesProductsSupply.css";
 
 const products = [
-  "Filters & Breathers",
-  "Lube Hydraulic Filters",
-  "Mobile Hose & Fittings Crimping",
-  "Hydraulic Hoses & Fittings",
-  "Hydraulic Cylinders",
-  "Control Solenoid Valves",
-  "Servo & Proportional Valves",
-  "Electro-Hydraulic Actuators",
-  "Control & Amplifier Cards",
-  "Hydraulic Pumps",
-  "Hydraulic Motors",
-  "Coolers",
-  "Hydraulic Oils",
-  "Seals, Gaskets & O-Rings",
+  {
+    title: "Filters & Breathers",
+    image: "/produts/filter-breathers.png",
+  },
+  {
+    title: "Lube Hydraulic Filters",
+    image: "/produts/hydraulic-filter.jpg",
+  },
+  {
+    title: "Hydraulic Hoses & Fittings",
+    image: "/produts/still-tube-fittings.png",
+  },
+  {
+    title: "Hydraulic Pumps",
+    image: "/produts/hydraulic-pump.png",
+  },
+  {
+    title: "Hydraulic Cylinders",
+    image: "/produts/hydraulic-cylinder.jpg",
+  },
+  {
+    title: "Control Solenoid Valves",
+    image: "/produts/control-solenoid-valves.jpg",
+  },
+  {
+    title: "Servo & Proportional Valves",
+    image: "/produts/servo-proportional-valves.jpg",
+  },
+  {
+    title: "Electro-Hydraulic Actuators",
+    image: "/produts/electro-hydraulic-actuators.png",
+  },
+  {
+    title: "Hydraulic Valves",
+    image: "/produts/hydraulic-valve.png",
+  },
 ];
 
 const ServicesProductsSupply = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  const visibleProducts = showAll ? products : products.slice(0, 4);
+
   return (
     <section className="services-products">
       <div className="services-products-container">
@@ -39,17 +65,32 @@ const ServicesProductsSupply = () => {
         </div>
 
         <div className="services-products-grid">
-          {products.map((product, index) => (
+          {visibleProducts.map((product, index) => (
             <div className="services-product-card" key={index}>
-              <div className="services-product-number">
-                {String(index + 1).padStart(2, "0")}
+              <div className="services-product-image">
+                <img src={product.image} alt={product.title} />
               </div>
 
-              <h3>{product}</h3>
+              <div className="services-product-content">
+                <div className="services-product-number">
+                  {String(index + 1).padStart(2, "0")}
+                </div>
 
-              <div className="services-product-line"></div>
+                <h3>{product.title}</h3>
+
+                <div className="services-product-line"></div>
+              </div>
             </div>
           ))}
+        </div>
+
+        <div className="services-products-button-wrapper">
+          <button
+            className="services-products-button"
+            onClick={() => setShowAll(!showAll)}
+          >
+            {showAll ? "View Less Products" : "View More Products"}
+          </button>
         </div>
       </div>
     </section>
