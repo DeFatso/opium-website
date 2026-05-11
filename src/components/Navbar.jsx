@@ -29,8 +29,8 @@ function Navbar() {
     <header className={`navbar ${isScrolled ? "navbar-scrolled" : ""}`}>
       <div className="nav-container">
         <Link to="/" className="nav-logo" onClick={() => setIsMenuOpen(false)}>
-          <img src="/logo.png" alt="Hyses logo" />
-          <span>Hyses</span>
+          <img src="/logo.png" alt="opium logo" />
+          <span>Opium</span>
         </Link>
 
         <nav className="nav-menu-desktop">

@@ -10,13 +10,12 @@ function Hero() {
     <section className="hero" id="home">
       <div className="hero-container">
         <div className="hero-text">
-          <p className="hero-eyebrow">Hydraulic & Engineering Solutions</p>
+          <p className="hero-eyebrow">Premium Events & Equipment Hire</p>
 
-          <h1>Powering Industry With Reliable Hydraulic Solutions</h1>
+          <h1>Creating Unforgettable Moments With Expert Event Management</h1>
 
           <p className="hero-description">
-            Hyses provides professional hydraulic repairs, engineering support,
-            system maintenance, and industrial solutions built for performance.
+            Opium Events delivers world-class event planning, production, and equipment hire for corporate functions, weddings, parties, and festivals. We bring your vision to life.
           </p>
 
           <div className="hero-actions">
