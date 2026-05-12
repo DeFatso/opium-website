@@ -21,7 +21,7 @@ const Footer = () => {
           <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path
               d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-              fill="#f85f1c"
+              fill="#40E0D0"
               opacity="0.1"
             ></path>
           </svg>
@@ -31,12 +31,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="footer-section footer-brand">
             <div className="footer-logo">
-              <h2>HYSES</h2>
+              <h2>OPIUM EVENTS</h2>
             </div>
 
             <p className="brand-description">
-              Leading provider of comprehensive hydraulic and engineering
-              solutions across Africa. Excellence in every connection.
+              Premier event management and equipment hire company delivering exceptional experiences across Africa. Creating unforgettable moments with precision and creativity.
             </p>
 
             <div className="footer-socials">
@@ -51,7 +50,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://www.facebook.com/hyseshydraulic"
+                href="https://www.facebook.com/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Facebook"
@@ -133,7 +132,7 @@ const Footer = () => {
 
               <div>
                 <p className="contact-label">Email</p>
-                <a href="mailto:info@hyses.co.za">info@hyses.co.za</a>
+                <a href="mailto:info@opiumevents.co.za">info@opiumevents.co.za</a>
               </div>
             </div>
 
@@ -164,7 +163,7 @@ const Footer = () => {
 
                 <div>
                   <p className="day">Monday - Friday</p>
-                  <p className="time">8:00 AM - 5:00 PM</p>
+                  <p className="time">9:00 AM - 6:00 PM</p>
                 </div>
               </div>
 
@@ -173,13 +172,13 @@ const Footer = () => {
 
                 <div>
                   <p className="day">Saturday</p>
-                  <p className="time">9:00 AM - 1:00 PM</p>
+                  <p className="time">10:00 AM - 2:00 PM</p>
                 </div>
               </div>
 
               <div className="hours-item emergency">
                 <p className="emergency-text">
-                  24/7 Emergency Support Available
+                  24/7 Event Support Available
                 </p>
               </div>
             </div>
@@ -189,7 +188,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="footer-bottom">
           <div className="footer-bottom-container">
-            <p>© {currentYear} HYSES. All rights reserved.</p>
+            <p>© {currentYear} OPIUM EVENTS. All rights reserved.</p>
           </div>
         </div>
       </footer>
@@ -201,7 +200,7 @@ const Footer = () => {
           <span>Call</span>
         </a>
 
-        <a href="mailto:info@hyses.co.za" className="sticky-email">
+        <a href="mailto:info@opiumevents.co.za" className="sticky-email">
           <FaEnvelope />
           <span>Email</span>
         </a>

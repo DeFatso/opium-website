@@ -8,17 +8,17 @@ const CTABanner = () => {
 
         <div className="cta-banner-content">
           <p className="cta-banner-label">
-            Reliable Hydraulic & Engineering Support
+            Professional Event Planning & Equipment Hire
           </p>
 
           <h2>
-            Need Professional Industrial Solutions?
+            Ready to Create Unforgettable Moments?
           </h2>
 
           <p>
-            From hydraulic repairs and maintenance to engineering support and
-            industrial services, Hyses is ready to help keep your operations
-            running efficiently.
+            From intimate gatherings to large-scale productions, Opium Events delivers
+            exceptional service, premium equipment, and creative expertise to bring
+            your vision to life. Let's make something amazing together.
           </p>
         </div>
 

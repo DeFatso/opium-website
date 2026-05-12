@@ -20,7 +20,7 @@
 
 .section-tag {
   display: inline-block;
-  color: #f85f1c;
+  color: #40E0D0;
   font-size: 0.8rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -37,7 +37,7 @@
   bottom: 0;
   width: 40px;
   height: 2px;
-  background: #f85f1c;
+  background: #40E0D0;
   transform: translateX(-50%);
 }
 
@@ -50,7 +50,7 @@
 }
 
 .gradient-text {
-  color: #f85f1c;
+  color: #40E0D0;
 }
 
 .section-subtitle {
@@ -117,7 +117,7 @@
 }
 
 .experience-badge .years {
-  color: #f85f1c;
+  color: #40E0D0;
   font-size: 1.8rem;
   font-weight: 900;
   line-height: 1;
@@ -173,7 +173,7 @@
 }
 
 .stat-value {
-  color: #f85f1c;
+  color: #40E0D0;
   font-size: 1.7rem;
   font-weight: 900;
   line-height: 1;
@@ -197,9 +197,9 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  background: #f85f1c;
-  color: #ffffff;
-  border: 2px solid #f85f1c;
+  background: #40E0D0;
+  color: #19253a;
+  border: 2px solid #40E0D0;
   padding: 14px 30px;
   font-size: 0.95rem;
   font-weight: 800;
@@ -211,6 +211,7 @@
 .cta-button:hover {
   background: #19253a;
   border-color: #19253a;
+  color: #40E0D0;
   transform: translateY(-4px);
 }
 
@@ -252,7 +253,7 @@
   min-width: 58px;
   width: 58px;
   height: 58px;
-  background: #fff0e8;
+  background: rgba(64, 224, 208, 0.1);
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -269,8 +270,8 @@
 .feature-icon-svg path,
 .feature-icon-svg circle,
 .feature-icon-svg rect {
-  fill: #f85f1c;
-  stroke: #f85f1c;
+  fill: #40E0D0;
+  stroke: #40E0D0;
   transition: 0.3s ease;
 }
 

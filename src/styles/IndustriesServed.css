@@ -16,7 +16,7 @@
 }
 
 .industries-label {
-  color: #f85f1c;
+  color: #40E0D0;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -57,7 +57,7 @@
 .industry-number {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #f85f1c;
+  color: #40E0D0;
   margin-bottom: 1rem;
 }
 

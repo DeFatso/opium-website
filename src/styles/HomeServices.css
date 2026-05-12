@@ -24,7 +24,7 @@
 .home-services-label {
   display: inline-block;
 
-  color: #f85f1c;
+  color: #40E0D0;
 
   font-size: 0.9rem;
   font-weight: 800;
@@ -60,8 +60,8 @@
 
   padding: 1rem 1.7rem;
 
-  background: #f85f1c;
-  color: white;
+  background: #40E0D0;
+  color: #19253a;
 
   text-decoration: none;
 
@@ -75,7 +75,8 @@
 
 .home-services-button:hover {
   transform: translateY(-4px);
-  background: #ff7436;
+  background: #5ee8da;
+  color: #19253a;
 }
 
 /* ========================= */
@@ -95,7 +96,7 @@
 
   padding: 2rem;
 
-  border: 1px solid rgba(248, 95, 28, 0.08);
+  border: 1px solid rgba(64, 224, 208, 0.08);
 
   transition: all 0.3s ease;
 }
@@ -114,9 +115,9 @@
 
   border-radius: 20px;
 
-  background: rgba(248, 95, 28, 0.1);
+  background: rgba(64, 224, 208, 0.1);
 
-  color: #f85f1c;
+  color: #40E0D0;
 
   display: flex;
   align-items: center;

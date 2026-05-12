@@ -2,28 +2,28 @@ import React from "react";
 import "../styles/HomeServices.css";
 import { ArrowRight } from "lucide-react";
 import {
-  Wrench,
-  Settings,
-  Zap,
-  Cog,
+  Calendar,
+  PartyPopper,
+  Mic,
+  Truck,
 } from "lucide-react";
 
 const services = [
   {
-    icon: <Settings size={34} />,
-    title: "Hydraulic Cylinders",
+    icon: <Calendar size={34} />,
+    title: "Event Planning & Management",
   },
   {
-    icon: <Wrench size={34} />,
-    title: "Valve Banks & Mono Blocks",
+    icon: <PartyPopper size={34} />,
+    title: "Weddings & Parties",
   },
   {
-    icon: <Zap size={34} />,
-    title: "Hydraulic Power Packs",
+    icon: <Mic size={34} />,
+    title: "Corporate Events & Conferences",
   },
   {
-    icon: <Cog size={34} />,
-    title: "Electrohydraulic Actuators",
+    icon: <Truck size={34} />,
+    title: "Equipment Hire & Logistics",
   },
 ];
 
@@ -42,15 +42,13 @@ const HomeServices = () => {
           </span>
 
           <h2>
-            Industrial Hydraulic
+            Premium Event Services
             <br />
-            Solutions You Can Trust
+            & Equipment Hire
           </h2>
 
           <p>
-            Hyses provides reliable hydraulic engineering, repairs,
-            manufacturing and industrial support solutions designed
-            for performance, safety and efficiency.
+            Opium Events delivers professional event planning, production, and equipment hire for all occasions. From intimate gatherings to large-scale festivals, we bring your vision to life with precision and flair.
           </p>
 
           <a href="/services" className="home-services-button">

@@ -1,6 +1,6 @@
 // src/components/WhyChooseUs.jsx
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Add this import
+import { useNavigate } from "react-router-dom";
 import "../styles/WhyChooseUs.css";
 
 import WhyChooseUsImage from "../assets/why-choose-us-main.jpg";
@@ -13,48 +13,48 @@ import HydraulicMaintenanceImg from "../assets/hydraulic-maintenance.jpg";
 import IndustrialEquipmentImg from "../assets/industrial-equipment.jpg";
 
 const WhyChooseUs = () => {
-  const navigate = useNavigate(); // Initialize navigate
+  const navigate = useNavigate();
 
   const features = [
     {
       id: 1,
       icon: QualityIcon,
-      title: "Premium Quality",
+      title: "Premium Equipment",
       description:
-        "ISO-certified components and rigorous testing ensure every solution meets the highest industry standards.",
+        "Top-of-the-line event equipment and audio-visual gear maintained to the highest standards for flawless execution.",
       delay: "0.1s",
     },
     {
       id: 2,
       icon: SupportIcon,
-      title: "24/7 Field Support",
+      title: "24/7 Event Support",
       description:
-        "Round-the-clock technical assistance and on-site support to minimize your operational downtime.",
+        "Round-the-clock coordination and on-site technical assistance to ensure your event runs perfectly from start to finish.",
       delay: "0.2s",
     },
     {
       id: 3,
       icon: InnovationIcon,
-      title: "Innovation First",
+      title: "Creative Innovation",
       description:
-        "Cutting-edge hydraulic solutions with continuous R&D to keep your operations ahead of the curve.",
+        "Cutting-edge event design and production techniques that bring fresh, memorable experiences to every occasion.",
       delay: "0.3s",
     },
     {
       id: 4,
       icon: ExpertiseIcon,
-      title: "Expert Engineers",
+      title: "Expert Planners",
       description:
-        "20+ years of combined experience with certified hydraulic specialists at your service.",
+        "10+ years of combined experience with certified event professionals dedicated to bringing your vision to life.",
       delay: "0.4s",
     },
   ];
 
   const stats = [
-    { value: "500+", label: "Projects Completed", delay: "0.2s" },
-    { value: "98%", label: "Client Satisfaction", delay: "0.3s" },
-    { value: "15+", label: "Industry Awards", delay: "0.4s" },
-    { value: "24/7", label: "Emergency Support", delay: "0.5s" },
+    { value: "500+", label: "Events Hosted", delay: "0.2s" },
+    { value: "99%", label: "Client Satisfaction", delay: "0.3s" },
+    { value: "25+", label: "Industry Partners", delay: "0.4s" },
+    { value: "24/7", label: "On-Site Support", delay: "0.5s" },
   ];
 
   const handleLearnMore = () => {
@@ -69,12 +69,12 @@ const WhyChooseUs = () => {
 
           <h2 className="section-title">
             Setting New Standards In
-            <span className="gradient-text"> Hydraulic Excellence</span>
+            <span className="gradient-text"> Event Excellence</span>
           </h2>
 
           <p className="section-subtitle">
-            Discover why industry leaders trust Hyses for their most critical
-            hydraulic and engineering needs.
+            Discover why clients trust Opium Events for their most important
+            occasions — from intimate gatherings to large-scale productions.
           </p>
         </div>
 
@@ -84,13 +84,13 @@ const WhyChooseUs = () => {
               <div className="main-image-wrapper">
                 <img
                   src={WhyChooseUsImage}
-                  alt="Hydraulic engineering expert at work"
+                  alt="Event planning professional at work"
                   className="main-image"
                   loading="lazy"
                 />
 
                 <div className="experience-badge">
-                  <span className="years">20+</span>
+                  <span className="years">10+</span>
                   <span className="text">Years of Excellence</span>
                 </div>
               </div>
@@ -99,7 +99,7 @@ const WhyChooseUs = () => {
                 <div className="stack-item">
                   <img
                     src={HydraulicMaintenanceImg}
-                    alt="Hydraulic system maintenance"
+                    alt="Event equipment setup"
                     loading="lazy"
                   />
                 </div>
@@ -107,7 +107,7 @@ const WhyChooseUs = () => {
                 <div className="stack-item">
                   <img
                     src={IndustrialEquipmentImg}
-                    alt="Industrial hydraulic equipment"
+                    alt="Live event production"
                     loading="lazy"
                   />
                 </div>

@@ -3,34 +3,34 @@ import "../styles/IndustriesServed.css";
 
 const industries = [
   {
-    title: "Mining",
+    title: "Corporate Events",
     description:
-      "Hydraulic maintenance and engineering support for heavy-duty mining equipment and systems.",
+      "Professional conferences, product launches, and corporate galas with seamless execution and premium production.",
   },
   {
-    title: "Manufacturing",
+    title: "Weddings",
     description:
-      "Reliable hydraulic solutions that keep industrial production lines operating efficiently.",
+      "Intimate ceremonies and grand receptions tailored to your unique vision with meticulous attention to detail.",
   },
   {
-    title: "Construction",
+    title: "Festivals",
     description:
-      "Support for hydraulic machinery, lifting equipment, and construction site systems.",
+      "Large-scale music and cultural festivals featuring stage production, sound systems, and crowd management.",
   },
   {
-    title: "Agriculture",
+    title: "Private Parties",
     description:
-      "Repair and servicing solutions for agricultural hydraulic machinery and equipment.",
+      "Birthday celebrations, anniversaries, and private gatherings that create lasting memories for you and your guests.",
   },
   {
-    title: "Transport",
+    title: "Equipment Hire",
     description:
-      "Hydraulic servicing and component supply for transport and fleet operations.",
+      "Premium event equipment including lighting, sound systems, furniture, and staging for any occasion.",
   },
   {
-    title: "Energy",
+    title: "Exhibitions",
     description:
-      "Engineering and hydraulic support for energy infrastructure and industrial operations.",
+      "Trade shows and exhibition setups with professional booth design, lighting, and audiovisual solutions.",
   },
 ];
 
@@ -40,16 +40,16 @@ const IndustriesServed = () => {
       <div className="industries-container">
 
         <div className="industries-header">
-          <p className="industries-label">Industries We Serve</p>
+          <p className="industries-label">Events We Cover</p>
 
           <h2>
-            Trusted Across Multiple Industrial Sectors
+            Creating Magic For Every Occasion
           </h2>
 
           <p className="industries-description">
-            Hyses provides hydraulic and engineering solutions to a wide
-            range of industries, delivering reliable support, maintenance,
-            and technical expertise where performance matters most.
+            Opium Events delivers exceptional event planning and equipment hire solutions
+            across a diverse range of occasions. From intimate gatherings to large-scale
+            productions, we bring professionalism and creativity to every event.
           </p>
         </div>
 

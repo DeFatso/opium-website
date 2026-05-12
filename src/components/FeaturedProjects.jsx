@@ -14,12 +14,11 @@ const FeaturedProjects = () => {
         <div className="featured-projects-content">
           <p className="featured-projects-label">Our Work</p>
 
-          <h2>Engineering in Motion</h2>
+          <h2>Events That Leave a Lasting Impression</h2>
 
           <p>
-            Take a closer look at Hyses in action — from hydraulic systems and
-            workshop repairs to field service operations and industrial
-            engineering solutions.
+            Take a closer look at Opium Events in action — from intimate weddings and
+            sophisticated corporate galas to large-scale festivals and premier equipment hire.
           </p>
 
           <a href="/projects" className="featured-projects-btn">
@@ -30,7 +29,7 @@ const FeaturedProjects = () => {
         <div className="featured-projects-grid">
           {featuredImages.map((image, index) => (
             <div className={`featured-project-card card-${index + 1}`} key={index}>
-              <img src={image} alt={`Hyses work preview ${index + 1}`} />
+              <img src={image} alt={`Opium Events showcase ${index + 1}`} />
             </div>
           ))}
         </div>

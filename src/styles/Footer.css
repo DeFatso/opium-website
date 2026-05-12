@@ -45,7 +45,7 @@
 
 .logo-icon {
   font-size: 2rem;
-  background: linear-gradient(135deg, #f85f1c, #ff8c42);
+  background: linear-gradient(135deg, #40E0D0, #5ee8da);
 
   width: 50px;
   height: 50px;
@@ -58,10 +58,10 @@
 }
 
 .footer-section h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 800;
 
-  background: linear-gradient(135deg, #f85f1c, #ff8c42);
+  background: linear-gradient(135deg, #40E0D0, #5ee8da);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -141,7 +141,7 @@
   width: 40px;
   height: 3px;
 
-  background: #f85f1c;
+  background: #40E0D0;
   border-radius: 3px;
 }
 
@@ -166,7 +166,7 @@
 }
 
 .footer-section li:hover a {
-  color: #f85f1c;
+  color: #40E0D0;
   transform: translateX(5px);
 }
 
@@ -174,7 +174,7 @@
   font-size: 0.75rem;
   opacity: 0;
   transition: all 0.3s ease;
-  color: #f85f1c;
+  color: #40E0D0;
 }
 
 .footer-section li:hover .link-icon {
@@ -184,29 +184,44 @@
 
 /* CONTACT */
 .contact-info-item {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  column-gap: 14px;
+  align-items: start;
+  margin-bottom: 24px;
 }
 
 .contact-icon {
-  color: #f85f1c;
+  color: #40E0D0;
   font-size: 1rem;
-  margin-top: 3px;
-  min-width: 20px;
+  width: 22px;
+  min-width: 22px;
+  height: 22px;
+  margin-top: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .contact-label {
   font-size: 0.7rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #8892b0;
-  margin-bottom: 3px;
+  letter-spacing: 3px;
+  color: #40E0D0;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 800;
 }
 
 .contact-info-item a {
-  color: #dbeafe;
+  color: #ffffff;
   text-decoration: none;
   font-size: 0.92rem;
   line-height: 1.6;
@@ -214,7 +229,7 @@
 }
 
 .contact-info-item a:hover {
-  color: #f85f1c;
+  color: #40E0D0;
 }
 
 /* HOURS */
@@ -235,7 +250,7 @@
 }
 
 .hours-icon {
-  color: #f85f1c;
+  color: #40E0D0;
 }
 
 .day {
@@ -253,12 +268,12 @@
   margin-top: 15px;
   padding-top: 15px;
 
-  border-top: 1px solid rgba(248, 95, 28, 0.3);
+  border-top: 1px solid rgba(64, 224, 208, 0.3);
 }
 
 .emergency-text {
   font-size: 0.8rem;
-  color: #f85f1c;
+  color: #40E0D0;
   font-weight: 600;
   text-align: center;
   width: 100%;

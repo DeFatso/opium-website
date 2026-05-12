@@ -23,7 +23,7 @@
 }
 
 .cta-banner-label {
-  color: #f85f1c;
+  color: #40E0D0;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -59,12 +59,13 @@
 }
 
 .cta-primary-btn {
-  background: #f85f1c;
-  color: white;
+  background: #40E0D0;
+  color: #19253a;
 }
 
 .cta-primary-btn:hover {
-  background: #ff7a3c;
+  background: #5ee8da;
+  color: #19253a;
   transform: translateY(-2px);
 }
 
