@@ -1,7 +1,7 @@
 // src/components/ServicesShowcase.jsx
 import React, { useEffect, useRef, useState } from "react";
 import "../styles/ServicesShowcase.css";
-import { ArrowRight, Wrench, Settings, Zap, Shield, CheckCircle, Award, Clock } from "lucide-react";
+import { ArrowRight, Calendar, PartyPopper, Mic, CheckCircle, Award, Clock, Sparkles } from "lucide-react";
 
 const ServicesShowcase = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,9 +26,9 @@ const ServicesShowcase = () => {
   }, []);
 
   const servicePoints = [
-    { icon: CheckCircle, text: "Precision Engineering", color: "#f85f1c" },
+    { icon: CheckCircle, text: "Creative Excellence", color: "#40E0D0" },
     { icon: Award, text: "Industry Leaders", color: "#19253a" },
-    { icon: Clock, text: "Rapid Response", color: "#f85f1c" },
+    { icon: Clock, text: "Rapid Response", color: "#40E0D0" },
   ];
 
   return (
@@ -37,7 +37,7 @@ const ServicesShowcase = () => {
       <div className="radiant-bg radiant-1"></div>
       <div className="radiant-bg radiant-2"></div>
       <div className="radiant-bg radiant-3"></div>
-      
+
       <div className="services-showcase-container">
         {/* LEFT SIDE - MODERN VISUAL */}
         <div className={`services-visual ${isVisible ? "animate" : ""}`}>
@@ -45,33 +45,33 @@ const ServicesShowcase = () => {
             {/* Main featured image */}
             <div className="featured-image-wrapper">
               <div className="featured-image">
-                <img src="/showcase1.jpg" alt="Hydraulic Engineering" />
+                <img src="/showcase1.jpg" alt="Event Production" />
                 <div className="image-glow"></div>
               </div>
               <div className="floating-badge badge-1">
                 <div className="badge-icon">
-                  <Wrench size={16} />
+                  <Calendar size={16} />
                 </div>
-                <span>Hydraulic Repairs</span>
+                <span>Event Planning</span>
               </div>
               <div className="floating-badge badge-2">
                 <div className="badge-icon">
-                  <Settings size={16} />
+                  <Sparkles size={16} />
                 </div>
-                <span>System Integration</span>
+                <span>Full Production</span>
               </div>
             </div>
 
             {/* Secondary images */}
             <div className="secondary-images">
               <div className="sec-img-wrapper">
-                <img src="/showcase2.jpg" alt="Industrial Service" />
+                <img src="/showcase2.jpg" alt="Event Setup" />
                 <div className="sec-overlay"></div>
               </div>
               <div className="sec-img-wrapper">
                 <div className="stats-preview">
                   <div className="stat-number">150+</div>
-                  <div className="stat-label">Projects Completed</div>
+                  <div className="stat-label">Events Hosted</div>
                 </div>
               </div>
             </div>
@@ -87,22 +87,22 @@ const ServicesShowcase = () => {
         <div className={`services-content ${isVisible ? "animate" : ""}`}>
           {/* Simple Label - No icon, no background */}
           <div className="content-label">
-            Engineering Excellence
+            Event Excellence
           </div>
 
           {/* Main Heading */}
           <h2>
-            Industrial Solutions
-            <span className="orange-text"> Built Around</span>
+            Premium Event Solutions
+            <span className="turquoise-text"> Built Around</span>
             <br />
-            <span className="orange-text">Reliability & Performance</span>
+            <span className="turquoise-text">Creativity & Precision</span>
           </h2>
 
           {/* Description */}
           <p className="description">
-            Hyses delivers trusted hydraulic and engineering services for industrial operations, 
-            maintenance and automation systems. Our experienced team ensures dependable support, 
-            quality workmanship and long-term performance across all sectors.
+            Opium Events delivers trusted event planning, production, and equipment hire services
+            for all occasions. Our experienced team ensures flawless execution, creative excellence,
+            and unforgettable experiences for every client.
           </p>
 
           {/* Service Points Grid */}
@@ -121,7 +121,7 @@ const ServicesShowcase = () => {
           <div className="stats-row">
             <div className="stat-block">
               <div className="stat-value">24/7</div>
-              <div className="stat-desc">Emergency Support</div>
+              <div className="stat-desc">Event Support</div>
             </div>
             <div className="stat-divider"></div>
             <div className="stat-block">

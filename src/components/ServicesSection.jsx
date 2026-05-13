@@ -1,62 +1,62 @@
 import React from "react";
 import "../styles/Services.css";
 import {
-  Wrench,
-  Settings,
-  Zap,
-  Cog,
-  Droplet,
-  Link,
-  Battery,
-  PanelTop,
-  Cpu,
+  Calendar,
+  PartyPopper,
+  Mic,
+  Truck,
+  Music,
+  Camera,
+  GlassWater,
+  Sparkles,
+  Users,
 } from "lucide-react";
 
 const services = [
   {
-    icon: <Settings size={40} />,
-    title: "Hydraulic Cylinders",
-    text: "Manufacture, repair and refurbishment of hydraulic cylinders for reliable performance.",
+    icon: <Calendar size={40} />,
+    title: "Event Planning",
+    text: "Comprehensive event planning and coordination for corporate functions, weddings, and private celebrations.",
   },
   {
-    icon: <Wrench size={40} />,
-    title: "Valve Banks & Mono Blocks",
-    text: "Repair, setting and testing for smooth and dependable hydraulic operation.",
+    icon: <PartyPopper size={40} />,
+    title: "Weddings & Parties",
+    text: "Beautifully crafted weddings and private parties tailored to your unique vision and style.",
   },
   {
-    icon: <Zap size={40} />,
-    title: "Hydraulic Power Packs",
-    text: "Assembling and factory acceptance testing for strong, efficient power systems.",
+    icon: <Mic size={40} />,
+    title: "Corporate Events",
+    text: "Professional conferences, product launches, and corporate galas with seamless execution.",
   },
   {
-    icon: <Cog size={40} />,
-    title: "Electrohydraulic Actuators",
-    text: "Assembling, repair and testing for accurate and controlled movement.",
+    icon: <Truck size={40} />,
+    title: "Equipment Hire",
+    text: "Premium event equipment including sound systems, lighting, staging, furniture, and decor.",
   },
   {
-    icon: <Droplet size={40} />,
-    title: "Hydraulic Pumps",
-    text: "Professional pump repairs and testing to restore power and extend service life.",
+    icon: <Music size={40} />,
+    title: "Live Entertainment",
+    text: "Artist booking, DJ services, live bands, and entertainment coordination for any occasion.",
   },
   {
-    icon: <Link size={40} />,
-    title: "Hoses & Fittings",
-    text: "Hydraulic hose solutions and precision crimping for safe, leak-free systems.",
+    icon: <Camera size={40} />,
+    title: "Event Production",
+    text: "Full-scale production services including audiovisual, lighting design, and stage management.",
   },
   {
-    icon: <Battery size={40} />,
-    title: "Accumulators",
-    text: "Repair, assembling and precharging for optimal hydraulic system performance.",
+    icon: <GlassWater size={40} />,
+    title: "Catering & Bar",
+    text: "Exquisite catering and bar services with customizable menus for any event size.",
   },
   {
-    icon: <PanelTop size={40} />,
-    title: "Control Panels",
-    text: "Power pack supply and custom control panel building for industrial systems.",
+    icon: <Sparkles size={40} />,
+    title: "Decor & Styling",
+    text: "Professional decor and styling services to create stunning, Instagram-worthy event spaces.",
   },
   {
-    icon: <Cpu size={40} />,
-    title: "PLC Solutions",
-    text: "Designing, implementing and supporting integrated PLC networks.",
+    icon: <Users size={40} />,
+    title: "Festivals",
+    text: "Large-scale festival planning and production including crowd management and vendor coordination.",
   },
 ];
 
@@ -70,8 +70,8 @@ const Services = () => {
           <p className="services-label">What We Do</p>
           <h2>Services</h2>
           <p>
-            End-to-end hydraulic and engineering solutions built for performance,
-            reliability and efficiency.
+            End-to-end event planning and equipment hire solutions built for creativity,
+            precision, and unforgettable experiences.
           </p>
         </div>
 

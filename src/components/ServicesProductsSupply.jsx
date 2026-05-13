@@ -3,40 +3,40 @@ import "../styles/ServicesProductsSupply.css";
 
 const products = [
   {
-    title: "Filters & Breathers",
-    image: "/produts/filter-breathers.png",
+    title: "Sound Systems",
+    image: "/produts/sound-system.jpg",
   },
   {
-    title: "Lube Hydraulic Filters",
-    image: "/produts/hydraulic-filter.jpg",
+    title: "LED Lighting & Truss",
+    image: "/produts/truss.jpg",
   },
   {
-    title: "Hydraulic Hoses & Fittings",
-    image: "/produts/still-tube-fittings.png",
+    title: "Staging & Risers",
+    image: "/produts/risers.jpg",
   },
   {
-    title: "Hydraulic Pumps",
-    image: "/produts/hydraulic-pump.png",
+    title: "Dance Floors",
+    image: "/produts/stage.jpg",
   },
   {
-    title: "Hydraulic Cylinders",
-    image: "/produts/hydraulic-cylinder.jpg",
+    title: "Furniture & Lounge",
+    image: "/produts/furniture.jpg",
   },
   {
-    title: "Control Solenoid Valves",
-    image: "/produts/control-solenoid-valves.jpg",
+    title: "Tents & Gazebos",
+    image: "/produts/tents.jpg",
   },
   {
-    title: "Servo & Proportional Valves",
-    image: "/produts/servo-proportional-valves.jpg",
+    title: "Projectors & Screens",
+    image: "/produts/projectors.jpg",
   },
   {
-    title: "Electro-Hydraulic Actuators",
-    image: "/produts/electro-hydraulic-actuators.png",
+    title: "Catering Equipment",
+    image: "/produts/catering.jpg",
   },
   {
-    title: "Hydraulic Valves",
-    image: "/produts/hydraulic-valve.png",
+    title: "Decor & Linens",
+    image: "/produts/decor.jpg",
   },
 ];
 
@@ -49,18 +49,18 @@ const ServicesProductsSupply = () => {
     <section className="services-products">
       <div className="services-products-container">
         <div className="services-products-header">
-          <p className="services-products-label">// Product Supply</p>
+          <p className="services-products-label">// Equipment Hire</p>
 
           <h2>
-            Our Range Of Spares
+            Premium Event Equipment
             <br />
-            <span>And Products Supply</span>
+            <span>For Every Occasion</span>
           </h2>
 
           <p className="services-products-intro">
-            We supply essential hydraulic spares, components and industrial
-            products to support reliable maintenance, repairs and system
-            performance.
+            We supply premium event equipment including sound systems, lighting, staging,
+            furniture, and decor to bring your vision to life with professional quality
+            and reliability.
           </p>
         </div>
 
@@ -89,7 +89,7 @@ const ServicesProductsSupply = () => {
             className="services-products-button"
             onClick={() => setShowAll(!showAll)}
           >
-            {showAll ? "View Less Products" : "View More Products"}
+            {showAll ? "View Less Equipment" : "View More Equipment"}
           </button>
         </div>
       </div>

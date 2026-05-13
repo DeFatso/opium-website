@@ -14,17 +14,17 @@ const ServicesHero = () => {
         </div>
 
         <h1>
-          Hydraulic & <span>Engineering</span>
+          Premium <span>Event</span>
           <br />
-          Services Built For Industry
+          Services & Equipment Hire
         </h1>
 
         <div className="services-hero-underline"></div>
 
         <p className="services-hero-text">
-          From hydraulic cylinder refurbishment to power packs, pumps, hoses,
-          control panels and PLC solutions, Hyses delivers reliable industrial
-          support built around performance and precision.
+          From event planning and wedding coordination to corporate functions,
+          festivals, and premium equipment hire — Opium Events delivers exceptional
+          experiences built around creativity, precision, and flawless execution.
         </p>
       </div>
     </section>

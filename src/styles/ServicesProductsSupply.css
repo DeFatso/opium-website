@@ -14,7 +14,7 @@
 }
 
 .services-products-label {
-  color: #f85f1c;
+  color: #40E0D0;
   font-size: 0.9rem;
   font-weight: 800;
   letter-spacing: 2px;
@@ -30,7 +30,7 @@
 }
 
 .services-products-header h2 span {
-  color: #f85f1c;
+  color: #40E0D0;
 }
 
 .services-products-intro {
@@ -96,8 +96,8 @@
   width: 40px;
   height: 40px;
   border-radius: 13px;
-  background: rgba(248, 95, 28, 0.1);
-  color: #f85f1c;
+  background: rgba(64, 224, 208, 0.1);
+  color: #40E0D0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,7 +116,7 @@
 .services-product-line {
   width: 42px;
   height: 4px;
-  background: #f85f1c;
+  background: #40E0D0;
   border-radius: 20px;
 }
 
@@ -128,8 +128,8 @@
 
 .services-products-button {
   border: none;
-  background: #f85f1c;
-  color: #ffffff;
+  background: #40E0D0;
+  color: #19253a;
   padding: 1rem 2rem;
   border-radius: 28px;
   font-size: 1rem;
@@ -139,7 +139,7 @@
 }
 
 .services-products-button:hover {
-  background: #ff7436;
+  background: #5ee8da;
   transform: translateY(-4px);
 }
 
