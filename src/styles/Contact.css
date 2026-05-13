@@ -15,7 +15,7 @@
 }
 
 .contact-label {
-  color: #f85f1c;
+  color: #40E0D0;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -56,7 +56,7 @@
 
 .contact-info-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(248, 95, 28, 0.35);
+  border-color: rgba(64, 224, 208, 0.35);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
 }
 
@@ -65,11 +65,11 @@
   height: 44px;
   min-width: 44px;
   border-radius: 14px;
-  background: #f85f1c;
+  background: #40E0D0;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: #19253a;
   font-size: 1.25rem;
 }
 
@@ -141,9 +141,9 @@
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: #f85f1c;
+  border-color: #40E0D0;
   background: #ffffff;
-  box-shadow: 0 0 0 4px rgba(248, 95, 28, 0.12);
+  box-shadow: 0 0 0 4px rgba(64, 224, 208, 0.12);
 }
 
 .form-group textarea {
@@ -154,8 +154,8 @@
 .contact-button {
   width: 100%;
   border: none;
-  background: #f85f1c;
-  color: #ffffff;
+  background: #40E0D0;
+  color: #19253a;
   padding: 1rem 1.3rem;
   border-radius: 999px;
   font-size: 1rem;
@@ -165,9 +165,9 @@
 }
 
 .contact-button:hover {
-  background: #df4f12;
+  background: #5ee8da;
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(248, 95, 28, 0.28);
+  box-shadow: 0 14px 30px rgba(64, 224, 208, 0.28);
 }
 
 @media (max-width: 980px) {

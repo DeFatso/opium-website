@@ -51,7 +51,7 @@
 }
 
 .partners-banner-text h2 span {
-  color: #ff5a1f;
+  color: #40E0D0;
 }
 
 .partners-banner-text p {
@@ -59,7 +59,6 @@
   max-width: 560px;
   font-size: 1.05rem;
   line-height: 1.5;
-  text-transform: uppercase;
 }
 
 .partners-banner-btn {
@@ -67,8 +66,8 @@
   width: 230px;
   height: 72px;
   border-radius: 8px;
-  background: #ff5a1f;
-  color: #ffffff;
+  background: #40E0D0;
+  color: #19253a;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 800;
@@ -81,7 +80,7 @@
 }
 
 .partners-banner-btn:hover {
-  background: #e94e14;
+  background: #5ee8da;
   transform: translateY(-5px);
 }
 
@@ -97,7 +96,7 @@
 }
 
 .partners-label {
-  color: #ff5a1f;
+  color: #40E0D0;
   font-size: 1.25rem;
   font-weight: 800;
   margin-bottom: 18px;
@@ -120,7 +119,7 @@
 
 .partner-card {
   height: 130px;
-  background: #ff5a1f;
+  background: #40E0D0;
   border-radius: 12px;
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.18);
 

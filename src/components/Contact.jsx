@@ -8,16 +8,16 @@ const Contact = () => {
         <div className="contact-left">
           <p className="contact-label">Get In Touch</p>
 
-          <h2>Let’s Talk Hydraulics</h2>
+          <h2>Let's Plan Your Next Event</h2>
 
           <p className="contact-intro">
-            Need hydraulic repairs, engineering support, field service, or
-            workshop assistance? Contact Hyses and our team will assist you.
+            Need event planning, equipment hire, or production support?
+            Contact Opium Events and our team will help bring your vision to life.
           </p>
 
           <div className="contact-info-grid">
             <div className="contact-info-card">
-              <span>☎</span>
+              <span>📞</span>
               <div>
                 <h4>Office</h4>
                 <p>+27 10 023 4807</p>
@@ -25,10 +25,10 @@ const Contact = () => {
             </div>
 
             <div className="contact-info-card">
-              <span>✉</span>
+              <span>✉️</span>
               <div>
                 <h4>Email</h4>
-                <p>info@hyses.co.za</p>
+                <p>info@opiumevents.co.za</p>
               </div>
             </div>
 
@@ -41,7 +41,7 @@ const Contact = () => {
             </div>
 
             <div className="contact-info-card">
-              <span>👥</span>
+              <span>📱</span>
               <div>
                 <h4>Direct Contacts</h4>
                 <p>Leeroy: +27 66 201 3689</p>
@@ -78,17 +78,17 @@ const Contact = () => {
                 <option value="" disabled>
                   Select a service
                 </option>
-                <option>Hydraulic Repairs</option>
-                <option>Engineering Solutions</option>
-                <option>Field Service</option>
-                <option>Workshop Support</option>
+                <option>Event Planning & Management</option>
+                <option>Wedding Coordination</option>
+                <option>Corporate Event Production</option>
+                <option>Equipment Hire</option>
                 <option>General Enquiry</option>
               </select>
             </div>
 
             <div className="form-group">
               <label>Message</label>
-              <textarea placeholder="Tell us how we can help"></textarea>
+              <textarea placeholder="Tell us about your event and how we can help"></textarea>
             </div>
 
             <button type="submit" className="contact-button">

@@ -6,14 +6,14 @@ function AboutInfo() {
       <div className="about-info-stats">
         <div className="about-info-stat">
           <span></span>
-          <h3>8+</h3>
+          <h3>10+</h3>
           <p>Years Experience</p>
         </div>
 
         <div className="about-info-stat">
           <span></span>
-          <h3>24h</h3>
-          <p>Field Support</p>
+          <h3>24/7</h3>
+          <p>Event Support</p>
         </div>
 
         <div className="about-info-stat">
@@ -36,24 +36,24 @@ function AboutInfo() {
 
           <img
             src="/about-info-main.jpg"
-            alt="Hydraulic components"
+            alt="Event setup and planning"
             className="about-info-img-main"
           />
 
           <img
             src="/about-info-small.jpg"
-            alt="Hydraulic testing equipment"
+            alt="Equipment hire showcase"
             className="about-info-img-small"
           />
         </div>
 
         <div className="about-info-content">
-          <h2>Experience The Highest Quality In Hydraulics</h2>
+          <h2>Experience Premium Event Planning & Equipment Hire</h2>
 
           <p>
-            Hyses delivers reliable hydraulic and engineering solutions built
-            around precision, fast response times, and long-term performance for
-            demanding industrial environments.
+            Opium Events delivers exceptional event management and equipment hire solutions
+            built around creativity, precision, and flawless execution for every occasion
+            — from intimate gatherings to large-scale productions.
           </p>
 
           <a href="/#contact" className="about-info-btn">

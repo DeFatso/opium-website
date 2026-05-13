@@ -19,10 +19,10 @@ function AboutPrinciples() {
             <h3>Our Mission</h3>
 
             <p>
-              To provide efficient and sustainable hydraulic and engineering
-              solutions tailored to meet each client’s specific requirements
-              while upholding the highest standards of safety and
-              professionalism.
+              To deliver exceptional event planning and equipment hire solutions
+              that create unforgettable experiences, tailored to each client's
+              unique vision while upholding the highest standards of creativity
+              and professionalism.
             </p>
           </div>
 
@@ -34,9 +34,9 @@ function AboutPrinciples() {
             <h3>Our Vision</h3>
 
             <p>
-              To be a trusted leader in hydraulic and engineering services,
-              recognized for our technical excellence, customer-first approach,
-              and commitment to continuous improvement.
+              To be the leading event management company in Africa, recognized
+              for our creative excellence, client-first approach, and commitment
+              to making every occasion truly remarkable.
             </p>
           </div>
 
@@ -48,11 +48,11 @@ function AboutPrinciples() {
             <h3>Core Values</h3>
 
             <ul>
+              <li>Creativity</li>
+              <li>Excellence</li>
               <li>Integrity</li>
-              <li>Innovation</li>
-              <li>Quality</li>
-              <li>Safety</li>
-              <li>Customer Satisfaction</li>
+              <li>Reliability</li>
+              <li>Client Satisfaction</li>
             </ul>
           </div>
         </div>

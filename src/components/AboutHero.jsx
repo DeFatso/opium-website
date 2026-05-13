@@ -42,9 +42,9 @@ const AboutHero = () => {
         <div className="about-hero-underline"></div>
 
         <p className="about-description">
-          Hyses is a trusted provider of hydraulic and engineering solutions,
-          delivering reliable services across multiple industries with precision,
-          expertise, and unwavering commitment to excellence.
+          Opium Events is a premier event management and equipment hire company,
+          dedicated to delivering exceptional experiences across every occasion
+          with creativity, precision, and unwavering commitment to excellence.
         </p>
 
         <div className="about-stats">
@@ -54,8 +54,8 @@ const AboutHero = () => {
             </div>
 
             <div className="stat-info">
-              <div className="stat-number">Quality</div>
-              <div className="stat-label">Driven Workmanship</div>
+              <div className="stat-number">Premium</div>
+              <div className="stat-label">Event Quality</div>
             </div>
           </div>
 
@@ -68,7 +68,7 @@ const AboutHero = () => {
 
             <div className="stat-info">
               <div className="stat-number">Reliable</div>
-              <div className="stat-label">Industrial Support</div>
+              <div className="stat-label">Event Support</div>
             </div>
           </div>
 
@@ -81,7 +81,7 @@ const AboutHero = () => {
 
             <div className="stat-info">
               <div className="stat-number">100%</div>
-              <div className="stat-label">Devotion</div>
+              <div className="stat-label">Client Focus</div>
             </div>
           </div>
         </div>

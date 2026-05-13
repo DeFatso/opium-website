@@ -52,7 +52,7 @@
   bottom: -200px;
   left: -150px;
   animation-delay: 3s;
-  background: rgba(248, 95, 28, 0.05);
+  background: rgba(64, 224, 208, 0.05);
 }
 
 .circle-3 {
@@ -70,7 +70,7 @@
   top: 60%;
   right: 5%;
   animation-delay: 9s;
-  background: rgba(248, 95, 28, 0.04);
+  background: rgba(64, 224, 208, 0.04);
 }
 
 /* FLOATING PARTICLES */
@@ -88,7 +88,7 @@
   position: absolute;
   width: 3px;
   height: 3px;
-  background: rgba(248, 95, 28, 0.4);
+  background: rgba(64, 224, 208, 0.4);
   border-radius: 50%;
   animation: particleFloat 8s ease-in-out infinite;
 }
@@ -188,11 +188,11 @@
 .about-label-line {
   width: 50px;
   height: 2px;
-  background: linear-gradient(90deg, #f85f1c, transparent);
+  background: linear-gradient(90deg, #40E0D0, transparent);
 }
 
 .about-label {
-  color: #f85f1c;
+  color: #40E0D0;
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 3px;
@@ -209,7 +209,7 @@
 }
 
 .about-hero-content h1 .highlight-text {
-  color: #f85f1c;
+  color: #40E0D0;
   position: relative;
   display: inline-block;
 }
@@ -221,7 +221,7 @@
   left: 0;
   right: 0;
   height: 12px;
-  background: rgba(248, 95, 28, 0.3);
+  background: rgba(64, 224, 208, 0.3);
   border-radius: 6px;
   z-index: -1;
 }
@@ -230,7 +230,7 @@
 .about-hero-underline {
   width: 80px;
   height: 4px;
-  background: #f85f1c;
+  background: #40E0D0;
   margin-bottom: 1.5rem;
   transform: scaleX(0);
   transform-origin: left;
@@ -268,17 +268,17 @@
 .stat-icon {
   width: 48px;
   height: 48px;
-  background: rgba(248, 95, 28, 0.15);
+  background: rgba(64, 224, 208, 0.15);
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #f85f1c;
+  color: #40E0D0;
   transition: all 0.3s ease;
 }
 
 .stat-item:hover .stat-icon {
-  background: #f85f1c;
+  background: #40E0D0;
   color: #ffffff;
   transform: scale(1.05);
 }
@@ -290,7 +290,7 @@
 .stat-number {
   font-size: 1.15rem;
   font-weight: 800;
-  color: #f85f1c;
+  color: #40E0D0;
   line-height: 1;
   margin-bottom: 0.3rem;
 }
@@ -314,8 +314,8 @@
   align-items: center;
   gap: 10px;
   background: transparent;
-  border: 2px solid #f85f1c;
-  color: #f85f1c;
+  border: 2px solid #40E0D0;
+  color: #40E0D0;
   padding: 12px 28px;
   border-radius: 50px;
   font-size: 0.9rem;
@@ -333,14 +333,14 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: #f85f1c;
+  background: #40E0D0;
   transition: left 0.3s ease;
   z-index: -1;
 }
 
 .about-cta:hover {
-  color: #ffffff;
-  border-color: #f85f1c;
+  color: #19253a;
+  border-color: #40E0D0;
   transform: translateY(-3px);
 }
 
@@ -492,8 +492,8 @@
   }
 
   .about-cta:hover {
-    background: #f85f1c;
-    color: #ffffff;
+    background: #40E0D0;
+    color: #19253a;
   }
 }
 

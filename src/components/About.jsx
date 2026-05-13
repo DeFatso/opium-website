@@ -3,10 +3,10 @@ import "../styles/About.css";
 
 function About() {
   const images = [
-    "/gallery/image-01.png",
-    "/gallery/image-02.png",
-    "/gallery/image-03.png",
-    "/gallery/image-04.png",
+    "/gallery/image-01.jpg",
+    "/gallery/image-02.jpg",
+    "/gallery/image-03.jpg",
+    "/gallery/image-04.jpg",
   ];
 
   return (

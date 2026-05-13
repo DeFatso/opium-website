@@ -16,7 +16,7 @@
 }
 
 .about-principles h2 span {
-  color: #ff5a1f;
+  color: #40E0D0;
 }
 
 .principles-grid {
@@ -28,7 +28,7 @@
 .principle-card {
   min-height: 300px;
   background: #ffffff;
-  border-radius: 12 12 12px 12px;
+  border-radius: 12px;
   padding: 6px 28px 28px;
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.18);
 }
@@ -36,12 +36,12 @@
 .principle-icon {
   width: 58px;
   height: 58px;
-  background: #ff5a1f;
+  background: #40E0D0;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000000;
+  color: #19253a;
   font-size: 1.9rem;
   margin-bottom: 28px;
 }

@@ -32,13 +32,13 @@ function AboutPartners() {
         <div className="partners-banner-content">
           <div className="partners-banner-text">
             <h2>
-              Reliable <span>Hydraulic</span> Support <br />
-              For Industrial Operations
+              Professional <span>Event Planning</span> <br />
+              For Every Occasion
             </h2>
 
             <p>
-              We support companies that rely on dependable hydraulic systems,
-              responsive service, and long-term engineering performance.
+              We partner with organizations and individuals who demand
+              exceptional event management, premium equipment hire, and flawless execution.
             </p>
           </div>
 
@@ -49,9 +49,9 @@ function AboutPartners() {
       </div>
 
       <div className="partners-main">
-        <p className="partners-label">Trusted By Industry</p>
+        <p className="partners-label">Trusted Partners</p>
 
-        <h2>Clients We’ve Partnered With</h2>
+        <h2>Clients We've Worked With</h2>
 
         <div className="partners-logo-grid">
           {partners.map((partner) => (
@@ -64,10 +64,10 @@ function AboutPartners() {
         </div>
 
         <p className="partners-description">
-          We are proud to partner with a diverse range of clients across mining,
-          manufacturing, engineering, and industrial sectors. These partnerships
-          reflect the trust placed in our service, workmanship, and technical
-          reliability.
+          We are proud to partner with a diverse range of clients across
+          corporate, private, and public sectors. These partnerships reflect
+          the trust placed in our creativity, professionalism, and commitment
+          to delivering exceptional events.
         </p>
       </div>
     </section>
